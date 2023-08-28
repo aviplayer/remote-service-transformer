@@ -28,7 +28,7 @@ pub async fn load_remote_data(
         }
     }
     let response = builder
-        .header("Content-Type", "application/json")
+        // .header("Content-Type", "application/json")
         .header("User-Agent", "ahead-org")
         .send().await?;
     Ok(response)
